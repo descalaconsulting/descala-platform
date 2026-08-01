@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DESCALA Consulting</title>
+
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -19,7 +20,17 @@
     </a>
 </div>
 
-        <ul>
+<button class="menu-toggle"
+        type="button"
+        aria-label="Abrir menú"
+        aria-expanded="false"
+        aria-controls="menu-principal">
+    <span></span>
+    <span></span>
+    <span></span>
+</button>
+
+        <ul id="menu-principal">
 
             <li><a href="#necesidades">Soluciones</a></li>
 
@@ -36,7 +47,7 @@
 <a href="https://wa.me/526691639984?text=Hola,%20buen%20día.%0A%0AVisité%20el%20sitio%20web%20de%20DESCALA%20Consulting%20y%20me%20gustaría%20conocer%20más%20sobre%20sus%20servicios%20y%20solicitar%20una%20asesoría%20para%20mi%20organización.%0A%0A¿Podrían%20brindarme%20información%20sobre%20el%20proceso%20para%20comenzar?%0A%0A¡Muchas%20gracias!"
    target="_blank"
    rel="noopener noreferrer"
-   class="btn-principal">
+   class="btn-principal btn-header">
     Solicitar asesoría
 </a>
 
@@ -565,5 +576,8 @@
     </div>
 
 </footer>
+
+<script src="js/script.js"></script>
+
 </body>
 </html>

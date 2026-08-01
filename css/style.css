@@ -710,3 +710,414 @@ nav ul a:hover::after{
     line-height:1.7;
 
 }
+
+/* ==========================================
+   RESPONSIVE DESIGN
+========================================== */
+
+@media (max-width: 992px){
+
+}
+
+.menu-toggle {
+    display: none;
+    width: 44px;
+    height: 44px;
+    padding: 9px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 26px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: #223266;
+    border-radius: 3px;
+}
+
+/* =========================
+   PÁGINA DE RECURSOS
+========================= */
+
+.pagina-recursos {
+    background-color: #f5f7fb;
+}
+
+.recursos-hero {
+    padding: 90px 0 70px;
+    text-align: center;
+    background: linear-gradient(135deg, #edf2ff 0%, #ffffff 100%);
+}
+
+.recursos-hero h1 {
+    max-width: 850px;
+    margin: 15px auto 20px;
+    color: #223266;
+    font-size: 3rem;
+    line-height: 1.15;
+}
+
+.recursos-hero h1 span {
+    display: block;
+    color: #d9a441;
+}
+
+.recursos-introduccion {
+    max-width: 720px;
+    margin: 0 auto;
+    color: #5e6475;
+    font-size: 1.08rem;
+    line-height: 1.7;
+}
+
+.catalogo-recursos {
+    padding: 70px 0 90px;
+}
+
+.filtros-recursos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 45px;
+}
+
+.filtro {
+    padding: 11px 24px;
+    color: #223266;
+    font-weight: 600;
+    background-color: #ffffff;
+    border: 1px solid #d8deec;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.filtro:hover,
+.filtro.activo {
+    color: #ffffff;
+    background-color: #223266;
+    border-color: #223266;
+    transform: translateY(-2px);
+}
+
+.recursos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+}
+
+.recurso-card {
+    display: flex;
+    flex-direction: column;
+    min-height: 290px;
+    padding: 30px;
+    background-color: #ffffff;
+    border: 1px solid #e1e6f0;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(34, 50, 102, 0.08);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.recurso-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 32px rgba(34, 50, 102, 0.14);
+}
+
+.recurso-tipo {
+    align-self: flex-start;
+    margin-bottom: 18px;
+    padding: 7px 12px;
+    color: #223266;
+    font-size: 0.8rem;
+    font-weight: 700;
+    background-color: #edf1ff;
+    border-radius: 20px;
+}
+
+.recurso-card h2 {
+    margin-bottom: 14px;
+    color: #223266;
+    font-size: 1.25rem;
+    line-height: 1.35;
+}
+
+.recurso-card p {
+    margin-bottom: 24px;
+    color: #666d7e;
+    line-height: 1.65;
+}
+
+.recurso-estado {
+    align-self: flex-start;
+    margin-top: auto;
+    color: #b17d1e;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.recurso-acciones {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+    margin-top: auto;
+}
+
+.recurso-pago {
+    padding: 7px 12px;
+    color: #8a6118;
+    background-color: #fff3d6;
+    border-radius: 20px;
+}
+
+.recurso-boton {
+    display: inline-block;
+    padding: 11px 20px;
+    color: #ffffff;
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-decoration: none;
+    background-color: #223266;
+    border: 2px solid #223266;
+    border-radius: 8px;
+    transition:
+        background-color 0.25s ease,
+        color 0.25s ease,
+        transform 0.25s ease;
+}
+
+.recurso-boton:hover {
+    color: #223266;
+    background-color: #ffffff;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px){
+
+        body{
+        overflow-x: hidden;
+    }
+
+.container{
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+
+    nav{
+        min-height: 80px;
+        gap: 18px;
+        position: relative;
+    }
+
+    .logo{
+        width: 145px;
+        height: auto;
+    }
+
+    .logo img{
+        width: 145px;
+        height: auto;
+    }
+
+    nav ul{
+        display: none;
+    }
+
+    nav > .btn-header{
+        padding: 11px 16px;
+        font-size: .82rem;
+        white-space: nowrap;
+    }
+
+    #hero{
+        padding: 70px 0;
+    }
+
+    .hero-contenido{
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .hero-etiqueta{
+        font-size: .82rem;
+    }
+
+    .hero-contenido h1{
+        font-size: clamp(2.3rem, 11vw, 3.6rem);
+        line-height: 1.05;
+    }
+
+    .hero-descripcion{
+        font-size: 1rem;
+        line-height: 1.7;
+        max-width: 100%;
+    }
+
+    .hero-botones{
+        flex-direction: column;
+        align-items: stretch;
+        gap: 14px;
+    }
+
+    .hero-botones a{
+        width: 100%;
+        text-align: center;
+    }
+
+    /* SECCIÓN NECESIDADES */
+
+    #necesidades{
+        padding: 70px 0;
+    }
+
+    .encabezado-seccion{
+        text-align: center;
+    }
+
+    .encabezado-seccion h2{
+        font-size: clamp(2rem, 10vw, 3rem);
+        line-height: 1.1;
+    }
+
+    .seccion-descripcion{
+        font-size: 1rem;
+        line-height: 1.7;
+    }
+
+    .tarjetas-necesidades{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 18px;
+        margin-top: 35px;
+    }
+
+    .tarjeta-necesidad{
+        width: 100%;
+        padding: 26px;
+    }
+
+    .tarjeta-necesidad:nth-child(4),
+.tarjeta-necesidad:nth-child(5){
+    grid-column: 1 / -1;
+}
+
+.razones-descala {
+    grid-template-columns: 1fr;
+    gap: 18px;
+}
+
+.categorias-capacitacion {
+    grid-template-columns: 1fr;
+    gap: 18px;
+}
+
+.recursos-contenido {
+    grid-template-columns: 1fr;
+    gap: 40px;
+}
+
+#hero h1 {
+    font-size: 2.5rem;
+    line-height: 1.1;
+}
+
+.footer-container {
+    grid-template-columns: 1fr;
+    gap: 35px;
+    text-align: center;
+    align-items: start;
+}
+
+.footer-brand img {
+    margin: 0 auto;
+}
+
+.footer-brand p {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menu-toggle {
+    display: block;
+}
+
+#menu-principal {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    margin: 0;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+    z-index: 1000;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+}
+
+#menu-principal.menu-abierto {
+    display: flex;
+}
+
+#menu-principal a {
+    display: block;
+    padding: 10px 16px;
+    border-radius: 8px;
+    transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+#menu-principal a:hover {
+    background-color: #223266;
+    color: #ffffff;
+}
+
+
+.recursos-hero {
+    padding: 60px 0 50px;
+}
+
+.recursos-hero h1 {
+    font-size: 2.15rem;
+}
+
+.recursos-introduccion {
+    font-size: 1rem;
+}
+
+.catalogo-recursos {
+    padding: 50px 0 70px;
+}
+
+.filtros-recursos {
+    margin-bottom: 35px;
+}
+
+.filtro {
+    padding: 10px 18px;
+}
+
+.recursos-grid {
+    grid-template-columns: 1fr;
+    gap: 22px;
+}
+
+.recurso-card {
+    min-height: auto;
+    padding: 25px;
+}
+
+
+}
+
+@media (max-width: 480px){
+
+}
